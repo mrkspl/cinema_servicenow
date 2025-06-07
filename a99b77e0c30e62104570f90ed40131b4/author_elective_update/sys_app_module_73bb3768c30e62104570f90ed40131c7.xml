@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Cinema">3bbb3768c30e62104570f90ed40131bf</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>NEW</link_type>
+        <map_page/>
+        <mobile_title>Create New</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>u_movies</name>
+        <order>2</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-07 14:32:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>73bb3768c30e62104570f90ed40131c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create New</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
+        <sys_update_name>sys_app_module_73bb3768c30e62104570f90ed40131c7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 14:32:25</sys_updated_on>
+        <timeline_page/>
+        <title>Create New</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</application>
+        <file_path/>
+        <instance_id>67bf8ba4db3a359005ef172913961995</instance_id>
+        <instance_name>dev225459</instance_name>
+        <name>sys_app_module_73bb3768c30e62104570f90ed40131c7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Cinema">3bbb3768c30e62104570f90ed40131bf</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>NEW</link_type><map_page/><mobile_title>Create New</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_movies</name><order>2</order><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-06-07 14:32:25</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>73bb3768c30e62104570f90ed40131c7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Create New</sys_name><sys_overrides/><sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package><sys_policy/><sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope><sys_update_name>sys_app_module_73bb3768c30e62104570f90ed40131c7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-06-07 14:32:25</sys_updated_on><timeline_page/><title>Create New</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-437866260</payload_hash>
+        <record_name>Create New</record_name>
+        <reverted_from/>
+        <source>398ec120c3ce22104570f90ed4013119</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-07 14:32:25</sys_created_on>
+        <sys_id>f3bb3768c30e62104570f90ed40131c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1974acea2c30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 14:32:25</sys_updated_on>
+        <type>Module</type>
+        <update_guid>f7bb3768070e62104e3f212068fe5dc8</update_guid>
+        <update_guid_history>f7bb3768070e62104e3f212068fe5dc8:-437866260</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Create New">5e80c430c34e62104570f90ed4013156</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-07 14:53:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>487a6fd99d1d4ed2b2b6b8273442d2f1</sys_id>
+        <sys_metadata>73bb3768c30e62104570f90ed40131c7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create New</sys_name>
+        <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
+        <sys_scope_delete display_value="">19d8e2d3cfae4785841eb200300141b9</sys_scope_delete>
+        <sys_update_name>sys_app_module_73bb3768c30e62104570f90ed40131c7</sys_update_name>
+        <sys_update_version display_value="sys_app_module_73bb3768c30e62104570f90ed40131c7">f3bb3768c30e62104570f90ed40131c9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 14:53:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

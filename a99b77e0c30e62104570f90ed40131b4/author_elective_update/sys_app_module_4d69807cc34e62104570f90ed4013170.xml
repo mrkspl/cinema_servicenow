@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Cinema">fda584f4c34e62104570f90ed4013105</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Programaçãos</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>u_moviesdb</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-07 15:32:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4d69807cc34e62104570f90ed4013170</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Filmes</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
+        <sys_update_name>sys_app_module_4d69807cc34e62104570f90ed4013170</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 15:35:56</sys_updated_on>
+        <timeline_page/>
+        <title>Filmes</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</application>
+        <file_path/>
+        <instance_id>67bf8ba4db3a359005ef172913961995</instance_id>
+        <instance_name>dev225459</instance_name>
+        <name>sys_app_module_4d69807cc34e62104570f90ed4013170</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Cinema">fda584f4c34e62104570f90ed4013105</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Programaçãos</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_moviesdb</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-06-07 15:32:02</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4d69807cc34e62104570f90ed4013170</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Filmes</sys_name><sys_overrides/><sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package><sys_policy/><sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope><sys_update_name>sys_app_module_4d69807cc34e62104570f90ed4013170</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-06-07 15:35:56</sys_updated_on><timeline_page/><title>Filmes</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-646983607</payload_hash>
+        <record_name>Filmes</record_name>
+        <reverted_from/>
+        <source>398ec120c3ce22104570f90ed4013119</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-07 15:35:56</sys_created_on>
+        <sys_id>1e4a84bcc34e62104570f90ed40131c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1974b08c9e20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 15:35:56</sys_updated_on>
+        <type>Module</type>
+        <update_guid>d24a84bca34e6210b1bf4d6c2a60d0c5</update_guid>
+        <update_guid_history>d24a84bca34e6210b1bf4d6c2a60d0c5:-646983607,862a84bc0b4e62101320b525ddc43382:594409805,c969807ca74e6210f0ebe4b20cfa5672:1392706349</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Filmes">1ec6f934c386a2104570f90ed4013175</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-07 23:29:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>09896385cc2245169cd040480d51f044</sys_id>
+        <sys_metadata>4d69807cc34e62104570f90ed4013170</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_moviesdb</sys_name>
+        <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
+        <sys_scope_delete display_value="">19d8e2d3cfae4785841eb200300141b9</sys_scope_delete>
+        <sys_update_name>sys_app_module_4d69807cc34e62104570f90ed4013170</sys_update_name>
+        <sys_update_version display_value="sys_app_module_4d69807cc34e62104570f90ed4013170">1e4a84bcc34e62104570f90ed40131c5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 23:29:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

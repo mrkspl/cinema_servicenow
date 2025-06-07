@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Salas">caa584f4c34e62104570f90ed4013118</application>
+        <filter/>
+        <name>Salas</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles/>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-07 15:15:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c2a584f4c34e62104570f90ed401311b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Salas</sys_name>
+        <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
+        <sys_update_name>sys_ui_module_c2a584f4c34e62104570f90ed401311b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 15:15:42</sys_updated_on>
+        <table>u_salas</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>

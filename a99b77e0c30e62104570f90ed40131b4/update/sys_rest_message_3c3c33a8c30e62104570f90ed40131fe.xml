@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message">
+    <sys_rest_message action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <authentication_type>no_authentication</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <description>OMDb API&#13;
+The Open Movie Database&#13;
+&#13;
+The OMDb API is a RESTful web service to obtain movie information, all content and images on the site are contributed and maintained by our users.</description>
+        <name>OMDb API</name>
+        <oauth2_profile/>
+        <protocol_name/>
+        <rest_endpoint>http://www.omdbapi.com/?i=tt3896198&amp;apikey=80508748</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-07 14:34:24</sys_created_on>
+        <sys_id>3c3c33a8c30e62104570f90ed40131fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OMDb API</sys_name>
+        <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
+        <sys_update_name>sys_rest_message_3c3c33a8c30e62104570f90ed40131fe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 14:34:24</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+</record_update>

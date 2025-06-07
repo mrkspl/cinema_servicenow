@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3c158c34c34e62104570f90ed401318b" label="Salas" max_length="40" name="u_salas" type="collection">
+        <element label="Capacidade" max_length="40" name="u_capacidade" type="integer"/>
+        <element display="true" label="Nome" max_length="40" name="u_nome" type="string"/>
+        <element label="Em Operação?" max_length="40" name="u_em_operacao" type="boolean"/>
+        <element choice="3" default="2d" label="Tipo" max_length="40" name="u_tipo" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="IMAX" value="imax"/>
+                <element inactive_on_update="false" label="2D" value="2d"/>
+                <element inactive_on_update="false" label="3D" value="3d"/>
+            </choice>
+        </element>
+    </element>
+</database>

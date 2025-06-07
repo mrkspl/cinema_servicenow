@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_catalog_view_mtom">
+    <sc_catalog_view_mtom action="INSERT_OR_UPDATE">
+        <default>true</default>
+        <sc_catalog display_value="Cinema">f2b1f1bcc346a2104570f90ed401316b</sc_catalog>
+        <sys_class_name>sc_catalog_view_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-07 23:08:28</sys_created_on>
+        <sys_id>57d1f5bcc346a2104570f90ed40131e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cinema.catalog_cinema</sys_name>
+        <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
+        <sys_policy/>
+        <sys_portal_page display_value="catalog_cinema">1bd1f5bcc346a2104570f90ed40131e6</sys_portal_page>
+        <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
+        <sys_update_name>sc_catalog_view_mtom_57d1f5bcc346a2104570f90ed40131e8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 23:08:28</sys_updated_on>
+    </sc_catalog_view_mtom>
+</record_update>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_catalog">
+    <sc_catalog action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Catalogo para serviços do Cinema</description>
+        <desktop_continue_shopping/>
+        <desktop_home_page/>
+        <desktop_image/>
+        <editors/>
+        <enable_wish_list>false</enable_wish_list>
+        <manager display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</manager>
+        <sys_class_name>sc_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-07 23:08:28</sys_created_on>
+        <sys_id>f2b1f1bcc346a2104570f90ed401316b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cinema</sys_name>
+        <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
+        <sys_update_name>sc_catalog_f2b1f1bcc346a2104570f90ed401316b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-07 23:08:28</sys_updated_on>
+        <title>Cinema</title>
+    </sc_catalog>
+    <sys_translated_text action="delete_multiple" query="documentkey=f2b1f1bcc346a2104570f90ed401316b"/>
+</record_update>
