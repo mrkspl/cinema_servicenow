@@ -55,7 +55,7 @@
 * To access the variables, use `producer.var1` where var1 is the name of the variable
 * To access the Record Producer use `cat_item`
 */]]></post_insert_script>
-        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=6ef27530c386a2104570f90ed401313f&amp;sysparm_preview=true", "summary");</preview>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=7f8febd3c342ee104570f90ed4013124&amp;sysparm_preview=true", "summary");</preview>
         <price>0</price>
         <published_ref/>
         <recurring_frequency/>
@@ -76,9 +76,14 @@
         <sc_template/>
         <script><![CDATA[(function() {
     var input_movie = producer.input_movie_db;
+    gs.info('MORANGO VALOR DE input_movie: ' + input_movie);
+
     var utils = new IntegrationMoviesUtils();
     var sysId = utils.getMovieByTitle(input_movie);
+    gs.info('MORANGO SYS ID RETORNADO: ' + sysId);
 })();
+
+
 ]]></script>
         <short_description/>
         <show_variable_help_on_load>false</show_variable_help_on_load>
@@ -86,16 +91,16 @@
         <state/>
         <sys_class_name>sc_cat_item_producer</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-06-07 23:14:12</sys_created_on>
-        <sys_id>6ef27530c386a2104570f90ed401313f</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_created_on>2025-06-16 02:44:37</sys_created_on>
+        <sys_id>7f8febd3c342ee104570f90ed4013124</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Incluir um filme</sys_name>
         <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
-        <sys_update_name>sc_cat_item_producer_6ef27530c386a2104570f90ed401313f</sys_update_name>
+        <sys_update_name>sc_cat_item_producer_7f8febd3c342ee104570f90ed4013124</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-07 23:53:11</sys_updated_on>
+        <sys_updated_on>2025-06-16 02:47:04</sys_updated_on>
         <table_name>u_moviesdb</table_name>
         <taxonomy_topic/>
         <template/>
@@ -103,40 +108,40 @@
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>23</version>
+        <version>2</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
         <workflow/>
     </sc_cat_item_producer>
-    <sys_translated_text action="delete_multiple" query="documentkey=6ef27530c386a2104570f90ed401313f"/>
-    <fx_price action="delete_multiple" query="id=6ef27530c386a2104570f90ed401313f"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=7f8febd3c342ee104570f90ed4013124"/>
+    <fx_price action="delete_multiple" query="id=7f8febd3c342ee104570f90ed4013124"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="BRL">BRL</currency>
         <field>price</field>
-        <id>6ef27530c386a2104570f90ed401313f</id>
+        <id>7f8febd3c342ee104570f90ed4013124</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-06-07 23:14:12</sys_created_on>
-        <sys_id>8723f530c386a2104570f90ed4013108</sys_id>
+        <sys_created_on>2025-06-16 02:44:37</sys_created_on>
+        <sys_id>6700b717c342ee104570f90ed4013104</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-07 23:14:12</sys_updated_on>
+        <sys_updated_on>2025-06-16 02:44:37</sys_updated_on>
         <table>sc_cat_item_producer</table>
         <type>calculated</type>
     </fx_price>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
-        <id>6ef27530c386a2104570f90ed401313f</id>
+        <id>7f8febd3c342ee104570f90ed4013124</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-06-07 23:14:11</sys_created_on>
-        <sys_id>7e23f130c386a2104570f90ed4013196</sys_id>
+        <sys_created_on>2025-06-16 02:44:37</sys_created_on>
+        <sys_id>5f00bfd3c342ee104570f90ed40131ef</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-07 23:14:11</sys_updated_on>
+        <sys_updated_on>2025-06-16 02:44:37</sys_updated_on>
         <table>sc_cat_item_producer</table>
         <use_es_latest>true</use_es_latest>
     </sys_es_latest_script>
