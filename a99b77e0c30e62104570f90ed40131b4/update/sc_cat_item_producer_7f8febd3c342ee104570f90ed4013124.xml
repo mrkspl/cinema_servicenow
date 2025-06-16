@@ -7,7 +7,7 @@
         <billable>false</billable>
         <can_cancel>false</can_cancel>
         <category/>
-        <checked_out/>
+        <checked_out>false</checked_out>
         <cost>0</cost>
         <custom_cart/>
         <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
@@ -75,32 +75,29 @@
         <sc_ic_version/>
         <sc_template/>
         <script><![CDATA[(function() {
-    var input_movie = producer.input_movie_db;
-    gs.info('MORANGO VALOR DE input_movie: ' + input_movie);
-
+    var title = producer.input_movie_db;
     var utils = new IntegrationMoviesUtils();
-    var sysId = utils.getMovieByTitle(input_movie);
-    gs.info('MORANGO SYS ID RETORNADO: ' + sysId);
+    var sysId = utils.getMovieByTitle(title);
+
+    producer.redirect = '/u_moviesdb.do?sys_id=' + sysId;
 })();
-
-
 ]]></script>
         <short_description/>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
-        <state/>
+        <state>published</state>
         <sys_class_name>sc_cat_item_producer</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-16 02:44:37</sys_created_on>
         <sys_id>7f8febd3c342ee104570f90ed4013124</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>Incluir um filme</sys_name>
         <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
         <sys_update_name>sc_cat_item_producer_7f8febd3c342ee104570f90ed4013124</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-16 02:47:04</sys_updated_on>
+        <sys_updated_on>2025-06-16 03:50:21</sys_updated_on>
         <table_name>u_moviesdb</table_name>
         <taxonomy_topic/>
         <template/>
@@ -108,7 +105,7 @@
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>2</version>
+        <version>22</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
