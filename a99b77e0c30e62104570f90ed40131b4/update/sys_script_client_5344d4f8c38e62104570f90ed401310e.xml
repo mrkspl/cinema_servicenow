@@ -16,7 +16,8 @@
     }
 
     g_form.getReference('u_filme', function(movie) {
-            g_form.setValue('u_duracao', movie.u_runtime);
+    g_form.setValue('u_duracao', movie.u_runtime);
+	g_form.setValue('u_poster_schedule', movie.u_poster);
     });
 }
 ]]></script>
@@ -26,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5344d4f8c38e62104570f90ed401310e</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Movie Information</sys_name>
         <sys_overrides/>
         <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
@@ -34,7 +35,7 @@
         <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
         <sys_update_name>sys_script_client_5344d4f8c38e62104570f90ed401310e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-07 16:26:02</sys_updated_on>
+        <sys_updated_on>2025-06-16 17:37:45</sys_updated_on>
         <table>u_schedule</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

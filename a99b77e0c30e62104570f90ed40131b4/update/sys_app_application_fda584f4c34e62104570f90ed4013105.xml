@@ -14,7 +14,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fda584f4c34e62104570f90ed4013105</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Cinema</sys_name>
         <sys_overrides/>
         <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
@@ -22,7 +22,7 @@
         <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
         <sys_update_name>sys_app_application_fda584f4c34e62104570f90ed4013105</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-07 15:20:01</sys_updated_on>
+        <sys_updated_on>2025-06-16 17:07:42</sys_updated_on>
         <title>Cinema</title>
         <view_name/>
     </sys_app_application>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>global.MoviesUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>MoviesUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var MoviesUtils = Class.create();
+MoviesUtils.prototype = {
+    initialize: function() {
+    },
+
+	getUltimaQuinta: function() {
+        var now = new GlideDateTime();
+        var dayOfWeek = parseInt(now.getDayOfWeekLocalTime()); // 1 (domingo) até 7 (sábado)
+
+        var diasAtras = (dayOfWeek >= 5) ? dayOfWeek - 5 : 7 - (5 - dayOfWeek);
+        now.subtractDays(diasAtras);
+        now.setDisplayValue(now.getDate() + ' 00:00:00');
+        return now;
+    },
+
+
+    type: 'MoviesUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-16 13:38:33</sys_created_on>
+        <sys_id>8cb58623c34eee104570f90ed40131a3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>MoviesUtils</sys_name>
+        <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
+        <sys_update_name>sys_script_include_8cb58623c34eee104570f90ed40131a3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-16 13:49:00</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>8cb58623c34eee104570f90ed40131a3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-16 13:38:32</sys_created_on>
+        <sys_id>5eb582afc30eee104570f90ed40131a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-16 13:38:32</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

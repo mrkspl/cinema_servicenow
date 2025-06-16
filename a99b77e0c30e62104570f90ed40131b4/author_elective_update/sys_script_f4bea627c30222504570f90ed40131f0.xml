@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>u_schedule</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="u_schedule">u_sessaoISEMPTY^ORu_horario_inicioVALCHANGES^EQ<item endquery="false" field="u_sessao" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="false" field="u_horario_inicio" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Preenchimento campo Sessão</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+    if (!current.u_horario_inicio) {
+        return;
+    }
+
+    var gdt = new GlideDateTime(current.u_horario_inicio);
+
+    // Pega o primeiro dia do mês (ano, mês, dia)
+    var firstDay = new GlideDateTime();
+    firstDay.setYear(gdt.getYearLocalTime());
+    firstDay.setMonth(gdt.getMonthLocalTime());
+    firstDay.setDayOfMonth(1);
+    firstDay.setDisplayValue(firstDay.getLocalDate() + ' 00:00:00');
+
+    // Função para achar a primeira quinta-feira do mês
+    function getFirstThursday(date) {
+        var tempDate = new GlideDateTime(date);
+        for (var i = 0; i < 7; i++) {
+            if (tempDate.getDayOfWeek() == 5) { // quinta = 5
+                return tempDate;
+            }
+            tempDate.addDays(1);
+        }
+        return tempDate;
+    }
+
+    var firstThursday = getFirstThursday(firstDay);
+
+    // Diferença em milissegundos
+    var diffMillis = gdt.getNumericValue() - firstThursday.getNumericValue();
+    var diffDays = Math.floor(diffMillis / (1000 * 60 * 60 * 24));
+
+    var weekNumber = diffDays >= 0 ? Math.floor(diffDays / 7) + 1 : 1;
+
+    current.u_sessao = 'Semana ' + weekNumber;
+
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-16 16:38:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f4bea627c30222504570f90ed40131f0</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Preenchimento campo Sessão</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
+        <sys_update_name>sys_script_f4bea627c30222504570f90ed40131f0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-16 16:58:52</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=f4bea627c30222504570f90ed40131f0"/>
+    <sys_es_latest_script action="DELETE">
+        <id>f4bea627c30222504570f90ed40131f0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-16 16:38:55</sys_created_on>
+        <sys_id>e80faea3c30222504570f90ed40131a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-16 16:38:55</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</application>
+        <file_path/>
+        <instance_id>67bf8ba4db3a359005ef172913961995</instance_id>
+        <instance_name>dev225459</instance_name>
+        <name>sys_script_f4bea627c30222504570f90ed40131f0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;u_schedule&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="u_schedule"&gt;u_sessaoISEMPTY^ORu_horario_inicioVALCHANGES^EQ&lt;item endquery="false" field="u_sessao" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/&gt;&lt;item endquery="false" field="u_horario_inicio" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Preenchimento campo Sessão&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+    if (!current.u_horario_inicio) {
+        return;
+    }
+
+    var gdt = new GlideDateTime(current.u_horario_inicio);
+
+    // Pega o primeiro dia do mês (ano, mês, dia)
+    var firstDay = new GlideDateTime();
+    firstDay.setYear(gdt.getYearLocalTime());
+    firstDay.setMonth(gdt.getMonthLocalTime());
+    firstDay.setDayOfMonth(1);
+    firstDay.setDisplayValue(firstDay.getLocalDate() + ' 00:00:00');
+
+    // Função para achar a primeira quinta-feira do mês
+    function getFirstThursday(date) {
+        var tempDate = new GlideDateTime(date);
+        for (var i = 0; i &lt; 7; i++) {
+            if (tempDate.getDayOfWeek() == 5) { // quinta = 5
+                return tempDate;
+            }
+            tempDate.addDays(1);
+        }
+        return tempDate;
+    }
+
+    var firstThursday = getFirstThursday(firstDay);
+
+    // Diferença em milissegundos
+    var diffMillis = gdt.getNumericValue() - firstThursday.getNumericValue();
+    var diffDays = Math.floor(diffMillis / (1000 * 60 * 60 * 24));
+
+    var weekNumber = diffDays &gt;= 0 ? Math.floor(diffDays / 7) + 1 : 1;
+
+    current.u_sessao = 'Semana ' + weekNumber;
+
+})(current, previous);
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-16 16:38:55&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f4bea627c30222504570f90ed40131f0&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;Preenchimento campo Sessão&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4"&gt;a99b77e0c30e62104570f90ed40131b4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Cinema"&gt;a99b77e0c30e62104570f90ed40131b4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_f4bea627c30222504570f90ed40131f0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-16 16:58:52&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=f4bea627c30222504570f90ed40131f0"/&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;f4bea627c30222504570f90ed40131f0&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-16 16:38:55&lt;/sys_created_on&gt;&lt;sys_id&gt;e80faea3c30222504570f90ed40131a0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-16 16:38:55&lt;/sys_updated_on&gt;&lt;table&gt;sys_script&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1637455699</payload_hash>
+        <record_name>Preenchimento campo Sessão</record_name>
+        <reverted_from/>
+        <source>398ec120c3ce22104570f90ed4013119</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-16 16:58:52</sys_created_on>
+        <sys_id>b493faabc30222504570f90ed401316d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19779adf1b50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-16 16:58:52</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>7893faab0c02225037baac34092ac16c</update_guid>
+        <update_guid_history>7893faab0c02225037baac34092ac16c:-1637455699,3213b2abaa0222504719ec63a9d43d15:1981135491,8fa2f26b160222505efe4dc5b459197a:-1846515534,8152722bb002225090ffff6ff95a535f:-1553103348,17023e2b1a02225088076c469ce5536a:1311617484,03c1f62b50022250b1f6267f316e4c3a:1633824684,ed7136e7d6022250b7d063038e233729:-1148067921,250176a71202225045b357977b663200:-944246784,12c0b2e797022250ef186ab103689a92:-446832620,947072a7db022250c8436fa693f2fbae:-1076940346,41ff2a67b50222505f1db75990b72fcb:-535498782,787f626788022250f8005014bee007b5:1160751706,380f26e309022250a35f0489c6e211e6:-32683992</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-16 17:00:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>3a314339a6734771b4dca76a11321149</sys_id>
+        <sys_metadata>f4bea627c30222504570f90ed40131f0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Preenchimento campo Sessão</sys_name>
+        <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
+        <sys_parent display_value="Programação">4068c8f8c34e62104570f90ed401312f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
+        <sys_scope_delete display_value="">19d8e2d3cfae4785841eb200300141b9</sys_scope_delete>
+        <sys_update_name>sys_script_f4bea627c30222504570f90ed40131f0</sys_update_name>
+        <sys_update_version display_value="sys_script_f4bea627c30222504570f90ed40131f0">b493faabc30222504570f90ed401316d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-16 17:00:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

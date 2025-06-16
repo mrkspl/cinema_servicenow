@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>u_schedule</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="u_schedule">u_horario_inicioISNOTEMPTY^EQ<item endquery="false" field="u_horario_inicio" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Formatando data</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+var gdt = new GlideDateTime(current.u_horario_inicio);
+
+gdt.setValue(gdt.getYearLocalTime() + "-" + 
+             pad((gdt.getMonthLocalTime()+1)) + "-" + 
+             pad(gdt.getDayOfMonthLocalTime()) + " " + 
+             pad(gdt.getHourLocalTime()) + ":" + 
+             pad(gdt.getMinuteLocalTime()) + ":00");
+
+function pad(n) {
+  return n < 10 ? '0' + n : n;
+}
+
+var dia = pad(gdt.getDayOfMonthLocalTime());
+var mes = pad(gdt.getMonthLocalTime() + 1);
+var ano = gdt.getYearLocalTime();
+
+var hora = pad(gdt.getHourLocalTime());
+var minuto = pad(gdt.getMinuteLocalTime());
+var segundo = "00";
+
+var dataFormatada = dia + "/" + mes + "/" + ano + " " + hora + ":" + minuto + ":" + segundo;
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-16 17:11:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>83463e6fc30222504570f90ed4013148</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Formatando data</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
+        <sys_update_name>sys_script_83463e6fc30222504570f90ed4013148</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-16 17:11:32</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=83463e6fc30222504570f90ed4013148"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>83463e6fc30222504570f90ed4013148</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-16 17:11:32</sys_created_on>
+        <sys_id>56763e6fc30222504570f90ed4013193</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-16 17:11:32</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
