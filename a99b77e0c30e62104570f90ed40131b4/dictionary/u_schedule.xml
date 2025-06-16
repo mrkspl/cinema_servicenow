@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="4068c8f8c34e62104570f90ed401312f" label="Programação" max_length="40" name="u_schedule" type="collection">
         <element label="Duração" max_length="40" name="u_duracao" type="string"/>
-        <element label="Horário" max_length="40" name="u_horario" type="glide_time"/>
+        <element label="Horário" max_length="40" name="u_horario_inicio" type="glide_date_time"/>
         <element choice="1" label="Linguagem" max_length="40" name="u_linguagem" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Legendado" value="leg"/>

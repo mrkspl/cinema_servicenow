@@ -14,62 +14,40 @@ IntegrationMoviesUtils.prototype = {
     initialize: function() {},
 
     getMovieByTitle: function(title) {
-        if (!title || title.trim() === '') {
-            gs.error('Título inválido ou vazio recebido em getMovieByTitle');
-            return null;
-        }
+    if (!title || title.trim() === '') {
+        gs.error('Título inválido ou vazio recebido em getMovieByTitle');
+        return null;
+    }
 
-        var rm = new sn_ws.RESTMessageV2('OMDb API', 'GetMovieByTitle');
-        rm.setStringParameter('title', title);
+    var rm = new sn_ws.RESTMessageV2('OMDb API', 'GetMovieByTitle');
+    rm.setStringParameter('title', title);
 
-        var response = rm.execute();
-        if (response.getStatusCode() !== 200) {
-            gs.error('Erro na API OMDb: HTTP ' + response.getStatusCode());
-            return null;
-        }
+    var response = rm.execute();
+    if (response.getStatusCode() !== 200) {
+        gs.error('Erro na API OMDb: HTTP ' + response.getStatusCode());
+        return null;
+    }
 
-        var body = response.getBody();
-        var movieData = JSON.parse(body);
+    var body = response.getBody();
+    var movieData = JSON.parse(body);
 
-        if (!movieData || movieData.Response === 'False') {
-            gs.error('Filme não encontrado: ' + title + ' - ' + movieData.Error);
-            return null;
-        }
+    if (!movieData || movieData.Response === 'False') {
+        gs.error('Filme não encontrado: ' + title + ' - ' + movieData.Error);
+        return null;
+    }
 
-        // Verifica se já existe registro com mesmo título ativo
-        var exists = new GlideRecord('u_moviesdb');
-        exists.addQuery('u_title', movieData.Title);
-        exists.query();
-        if (exists.next()) {
-            gs.warn('Filme já existente: ' + movieData.Title);
-            return exists.getUniqueValue(); // Retorna sys_id existente
-        }
+    var exists = new GlideRecord('u_moviesdb');
+    exists.addQuery('u_title', movieData.Title);
+    exists.query();
+    if (exists.next()) {
+        gs.warn('Filme já existente: ' + movieData.Title);
+        return exists.getUniqueValue(); 
+    }
 
-        var movie = new GlideRecord('u_moviesdb');
-        movie.initialize();
+    return this.insertMovieRecord(movieData);
+},
 
-        movie.u_title = movieData.Title;
-        movie.u_director = movieData.Director;
-        movie.u_rated = movieData.Rated;
-        movie.u_runtime = movieData.Runtime;
-        movie.u_genre = movieData.Genre;
-        movie.u_released = movieData.Released;
-        movie.u_country = movieData.Country;
-        movie.u_plot = movieData.Plot;
-        movie.u_imdbid = movieData.imdbID;
-        movie.u_poster = this.formaterPoster(movieData);
-        movie.u_active = true; // se você tiver esse campo
-
-        var sysId = movie.insert();
-        if (!sysId) {
-            gs.error('Erro ao inserir filme: ' + movieData.Title);
-            return null;
-        }
-
-        return sysId;
-    },
-
-    insertMovieRecord: function(movieData) {
+   insertMovieRecord: function(movieData) {
         var movie = new GlideRecord('u_moviesdb');
         movie.initialize();
 
@@ -92,52 +70,6 @@ IntegrationMoviesUtils.prototype = {
         }
 
         return sysId;
-    },
-
-    getMovieById: function(id) {
-        var rm = new sn_ws.RESTMessageV2('OMDb API', 'GetMovieById');
-        rm.setStringParameter('id', id);
-
-        var response = rm.execute();
-        var body = response.getBody();
-        gs.info('Resposta da API OMDb: ' + body);
-
-        if (response.getStatusCode() !== 200) {
-            gs.error('Erro na API OMDb: HTTP ' + response.getStatusCode());
-            return null;
-        }
-
-        var movieData = JSON.parse(body);
-
-        if (!movieData || movieData.Response === 'False') {
-            gs.error('Filme não encontrado: ' + id + ' - ' + movieData.Error);
-            return null;
-        }
-
-        var movie = new GlideRecord('u_moviesdb');
-        movie.initialize();
-
-        // Dados básicos
-        movie.u_title = movieData.Title;
-        movie.u_director = movieData.Director;
-        movie.u_rated = movieData.Rated;
-        movie.u_runtime = movieData.Runtime;
-        movie.u_genre = movieData.Genre;
-        movie.u_released = movieData.Released;
-        movie.u_country = movieData.Country;
-        movie.u_plot = movieData.Plot;
-        movie.u_imdb_id = movieData.imdbID;
-
-        movie.u_poster = this.formaterPoster(movieData);
-
-        var sysId = movie.insert();
-
-        if (!sysId) {
-            gs.error('Erro: não foi possível inserir o filme: ' + movieData.Title);
-            return null;
-        }
-
-        return sysId.toString();
     },
 
     formaterPoster: function(movieData) {
@@ -180,13 +112,13 @@ IntegrationMoviesUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-07 14:33:05</sys_created_on>
         <sys_id>2deb3360c30e62104570f90ed4013157</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>IntegrationMoviesUtils</sys_name>
         <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
         <sys_update_name>sys_script_include_2deb3360c30e62104570f90ed4013157</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-16 03:46:28</sys_updated_on>
+        <sys_updated_on>2025-06-16 04:07:14</sys_updated_on>
     </sys_script_include>
 </record_update>
