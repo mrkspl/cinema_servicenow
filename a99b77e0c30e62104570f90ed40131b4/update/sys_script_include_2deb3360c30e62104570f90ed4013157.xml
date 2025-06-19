@@ -47,40 +47,40 @@ DauloIntegrationMoviesUtils.prototype = {
         return this.insertMovieRecord(movieData);
     },
 
-	getMovieById: function(imdbId) {
-    if (!imdbId || imdbId.trim() === '') {
-        gs.error('ID inválido ou vazio recebido em getMovieById');
-        return null;
-    }
+    getMovieById: function(imdbId) {
+        if (!imdbId || imdbId.trim() === '') {
+            gs.error('ID inválido ou vazio recebido em getMovieById');
+            return null;
+        }
 
-    var rm = new sn_ws.RESTMessageV2('OMDb API', 'GetMovieById');
-    rm.setStringParameter('id', imdbId); // usa o parâmetro ${id}, que mapeia para ?i=...
+        var rm = new sn_ws.RESTMessageV2('OMDb API', 'GetMovieById');
+        rm.setStringParameter('id', imdbId); // usa o parâmetro ${id}, que mapeia para ?i=...
 
-    var response = rm.execute();
-    if (response.getStatusCode() !== 200) {
-        gs.error('Erro na API OMDb: HTTP ' + response.getStatusCode());
-        return null;
-    }
+        var response = rm.execute();
+        if (response.getStatusCode() !== 200) {
+            gs.error('Erro na API OMDb: HTTP ' + response.getStatusCode());
+            return null;
+        }
 
-    var body = response.getBody();
-    var movieData = JSON.parse(body);
+        var body = response.getBody();
+        var movieData = JSON.parse(body);
 
-    if (!movieData || movieData.Response === 'False') {
-        gs.error('Filme não encontrado pelo ID: ' + imdbId + ' - ' + movieData.Error);
-        return null;
-    }
+        if (!movieData || movieData.Response === 'False') {
+            gs.error('Filme não encontrado pelo ID: ' + imdbId + ' - ' + movieData.Error);
+            return null;
+        }
 
-    // Verifica se já existe registro com esse IMDb ID
-    var exists = new GlideRecord('u_moviesdb');
-    exists.addQuery('u_imdbid', movieData.imdbID);
-    exists.query();
-    if (exists.next()) {
-        gs.warn('Filme já existente com esse IMDb ID: ' + movieData.imdbID);
-        return exists.getUniqueValue();
-    }
+        // Verifica se já existe registro com esse IMDb ID
+        var exists = new GlideRecord('u_moviesdb');
+        exists.addQuery('u_imdbid', movieData.imdbID);
+        exists.query();
+        if (exists.next()) {
+            gs.warn('Filme já existente com esse IMDb ID: ' + movieData.imdbID);
+            return exists.getUniqueValue();
+        }
 
-    return this.insertMovieRecord(movieData);
-},
+        return this.insertMovieRecord(movieData);
+    },
 
 
 
@@ -93,12 +93,14 @@ DauloIntegrationMoviesUtils.prototype = {
         movie.u_rated = movieData.Rated;
         movie.u_runtime = movieData.Runtime;
         movie.u_genre = movieData.Genre;
-        movie.u_released = movieData.Released;
+        movie.u_release_date = this.formaterReleaseDate(movieData);
         movie.u_country = movieData.Country;
         movie.u_plot = movieData.Plot;
         movie.u_imdbid = movieData.imdbID;
         movie.u_poster = this.formaterPoster(movieData);
         movie.u_info = this.formaterInformation(movieData);
+        movie.u_source = "integration";
+
 
         var sysId = movie.insert();
 
@@ -109,6 +111,51 @@ DauloIntegrationMoviesUtils.prototype = {
 
         return sysId;
     },
+
+    formaterReleaseDate: function(movieData) {
+        var releasedStr = movieData.Released;
+        if (!releasedStr) {
+            return null;
+        }
+
+        var gd = new GlideDateTime();
+
+        try {
+            var months = {
+                Jan: '01',
+                Feb: '02',
+                Mar: '03',
+                Apr: '04',
+                May: '05',
+                Jun: '06',
+                Jul: '07',
+                Aug: '08',
+                Sep: '09',
+                Oct: '10',
+                Nov: '11',
+                Dec: '12'
+            };
+
+            var parts = releasedStr.split(' ');
+            if (parts.length >= 3) {
+                var day = parts[0];
+                var month = months[parts[1]];
+                var year = parts[2];
+
+                var isoDate = year + '-' + month + '-' + day.padStart(2, '0');
+
+                gd.setValue(isoDate);
+                return gd;
+            } else {
+                gd.setValue(releasedStr);
+                return gd;
+            }
+        } catch (e) {
+            gs.error('Erro ao formatar data Released: ' + e.message);
+            return null;
+        }
+    },
+
 
     formaterPoster: function(movieData) {
         var posterUrl = movieData.Poster || '';
@@ -124,7 +171,6 @@ DauloIntegrationMoviesUtils.prototype = {
 
         return posterHtml;
     },
-
 
     formaterInformation: function(movieData) {
         var posterUrl = movieData.Poster || '';
@@ -166,13 +212,13 @@ DauloIntegrationMoviesUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-07 14:33:05</sys_created_on>
         <sys_id>2deb3360c30e62104570f90ed4013157</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>DauloIntegrationMoviesUtils</sys_name>
         <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
         <sys_update_name>sys_script_include_2deb3360c30e62104570f90ed4013157</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-19 02:05:11</sys_updated_on>
+        <sys_updated_on>2025-06-19 17:34:41</sys_updated_on>
     </sys_script_include>
 </record_update>

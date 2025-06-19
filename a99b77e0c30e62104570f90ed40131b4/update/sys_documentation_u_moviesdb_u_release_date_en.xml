@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_release_date" label="Release Date" language="en" table="u_moviesdb">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_release_date</element>
+            <help/>
+            <hint/>
+            <label>Release Date</label>
+            <language>en</language>
+            <name>u_moviesdb</name>
+            <plural>Release Dates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-19 17:34:30</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Release Date</sys_name>
+            <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
+            <sys_update_name>sys_documentation_u_moviesdb_u_release_date_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-19 17:34:30</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
