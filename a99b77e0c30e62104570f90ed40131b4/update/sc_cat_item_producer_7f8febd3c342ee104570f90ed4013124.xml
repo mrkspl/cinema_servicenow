@@ -75,13 +75,36 @@
         <sc_ic_version/>
         <sc_template/>
         <script><![CDATA[(function() {
-    var title = producer.input_movie_db;
-    var utils = new IntegrationMoviesUtils();
-    var sysId = utils.getMovieByTitle(title);
+    var utils = new DauloIntegrationMoviesUtils();
+	var sysId = '';
 
-    producer.redirect = '/u_moviesdb.do?sys_id=' + sysId;
-})();
-]]></script>
+    if (producer.input_choice == 'title') {
+        var title = producer.input_movie_title;
+        sysId = utils.getMovieByTitle(title);
+
+    } else if (producer.input_choice == 'imdb_id') {
+        var imdb_id = producer.input_imdb_id;
+        sysId = utils.getMovieById(imdb_id);
+
+    } else if (producer.input_choice == 'manually') {
+        var manually_input = new GlideRecord('u_moviesdb');
+        manually_input.initialize();
+
+        manually_input.u_title = producer.title;
+        manually_input.u_director = producer.director;
+        manually_input.u_genre = producer.genre;
+		manually_input.u_runtime = producer.runtime;
+		manually_input.u_released = producer.released;
+		manually_input.u_country = producer.country;
+		manually_input.u_rated = producer.rated;
+		manually_input.u_plot = producer.plot;
+		manually_input.u_poster_attachment = producer.poster;
+
+        sysId = manually_input.insert();
+    }
+	
+	producer.redirect = '/u_moviesdb.do?sys_id=' + sysId;
+})();]]></script>
         <short_description/>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
@@ -90,14 +113,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-06-16 02:44:37</sys_created_on>
         <sys_id>7f8febd3c342ee104570f90ed4013124</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>172</sys_mod_count>
         <sys_name>Incluir um filme</sys_name>
         <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
         <sys_update_name>sc_cat_item_producer_7f8febd3c342ee104570f90ed4013124</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-16 17:51:07</sys_updated_on>
+        <sys_updated_on>2025-06-19 03:32:32</sys_updated_on>
         <table_name>u_moviesdb</table_name>
         <taxonomy_topic/>
         <template/>
@@ -105,7 +128,7 @@
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>25</version>
+        <version>173</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>

@@ -12,7 +12,7 @@
         <element label="Em Exibição" max_length="40" name="u_this_week" type="boolean"/>
         <element label="Filme" max_length="32" name="u_filme" reference="u_moviesdb" type="reference"/>
         <element label="Sala" max_length="32" name="u_sala" reference="u_salas" type="reference"/>
-        <element label="Tipo da Sessão" max_length="40" name="u_tipo_da_sessao" reference_qual="null" reference_qual_condition="null" type="string"/>
+        <element label="Tipo da Sessão" max_length="40" name="u_tipo_da_sessao" read_only="true" reference_qual="null" reference_qual_condition="null" type="string"/>
         <element label="Poster" max_length="8000" name="u_poster_schedule" read_only="true" type="html"/>
         <index name="index">
             <element name="u_filme"/>

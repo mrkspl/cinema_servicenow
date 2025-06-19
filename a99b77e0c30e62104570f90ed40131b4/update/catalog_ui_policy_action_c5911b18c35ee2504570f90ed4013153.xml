@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Incluir um filme">7f8febd3c342ee104570f90ed4013124</catalog_item>
+        <catalog_variable>IO:99ea875cc31ee2504570f90ed401311c</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-19 03:05:29</sys_created_on>
+        <sys_id>c5911b18c35ee2504570f90ed4013153</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>released</sys_name>
+        <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_c5911b18c35ee2504570f90ed4013153</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-19 03:06:47</sys_updated_on>
+        <table/>
+        <ui_policy display_value="DAULO: Entrada de dados (titulo)">64084758c31ee2504570f90ed401317e</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>released</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=c5911b18c35ee2504570f90ed4013153"/>
+</record_update>

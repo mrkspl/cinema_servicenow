@@ -8,6 +8,7 @@
         <element label="Plot" max_length="1000" name="u_plot" read_only="true" type="string"/>
         <element label="Genre" max_length="100" name="u_genre" read_only="true" type="string"/>
         <element display="true" label="Title" max_length="100" name="u_title" read_only="true" type="string"/>
+        <element label="Poster Attachment" max_length="40" name="u_poster_attachment" read_only="true" type="file_attachment"/>
         <element label="Released" max_length="100" name="u_released" read_only="true" type="string"/>
         <element label="imdbID" max_length="100" name="u_imdbid" type="string"/>
         <element label="Runtime" max_length="100" name="u_runtime" read_only="true" type="string"/>

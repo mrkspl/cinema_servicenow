@@ -4,13 +4,13 @@
             <element>u_title</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-16 17:34:57</sys_created_on>
-            <sys_id>91db76a7c34222504570f90ed40131c5</sys_id>
+            <sys_created_on>2025-06-19 03:25:54</sys_created_on>
+            <sys_id>e146dfdcc35ee2504570f90ed401316c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_moviesdb" sys_domain="global" view="Default view">7e8f3facc30e62104570f90ed40131dd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-16 17:34:57</sys_updated_on>
+            <sys_updated_on>2025-06-19 03:25:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>u_director</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-16 17:34:57</sys_created_on>
-            <sys_id>19db76a7c34222504570f90ed40131c5</sys_id>
+            <sys_created_on>2025-06-19 03:25:54</sys_created_on>
+            <sys_id>6946dfdcc35ee2504570f90ed401316c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_moviesdb" sys_domain="global" view="Default view">7e8f3facc30e62104570f90ed40131dd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-16 17:34:57</sys_updated_on>
+            <sys_updated_on>2025-06-19 03:25:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>u_genre</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-16 17:34:57</sys_created_on>
-            <sys_id>9ddb76a7c34222504570f90ed40131c5</sys_id>
+            <sys_created_on>2025-06-19 03:25:55</sys_created_on>
+            <sys_id>ed46dfdcc35ee2504570f90ed401316c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_moviesdb" sys_domain="global" view="Default view">7e8f3facc30e62104570f90ed40131dd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-16 17:34:57</sys_updated_on>
+            <sys_updated_on>2025-06-19 03:25:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>u_runtime</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-16 17:34:57</sys_created_on>
-            <sys_id>15db76a7c34222504570f90ed40131c6</sys_id>
+            <sys_created_on>2025-06-19 03:25:55</sys_created_on>
+            <sys_id>6546dfdcc35ee2504570f90ed401316d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_moviesdb" sys_domain="global" view="Default view">7e8f3facc30e62104570f90ed40131dd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-16 17:34:57</sys_updated_on>
+            <sys_updated_on>2025-06-19 03:25:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>.split</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-16 17:34:57</sys_created_on>
-            <sys_id>99db76a7c34222504570f90ed40131c6</sys_id>
+            <sys_created_on>2025-06-19 03:25:55</sys_created_on>
+            <sys_id>e946dfdcc35ee2504570f90ed401316d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_moviesdb" sys_domain="global" view="Default view">7e8f3facc30e62104570f90ed40131dd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-16 17:34:57</sys_updated_on>
+            <sys_updated_on>2025-06-19 03:25:55</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>u_released</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-16 17:34:57</sys_created_on>
-            <sys_id>11db76a7c34222504570f90ed40131c7</sys_id>
+            <sys_created_on>2025-06-19 03:25:55</sys_created_on>
+            <sys_id>6146dfdcc35ee2504570f90ed401316e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_moviesdb" sys_domain="global" view="Default view">7e8f3facc30e62104570f90ed40131dd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-16 17:34:57</sys_updated_on>
+            <sys_updated_on>2025-06-19 03:25:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>u_country</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-16 17:34:57</sys_created_on>
-            <sys_id>99dbf6a7c34222504570f90ed40131ea</sys_id>
+            <sys_created_on>2025-06-19 03:25:55</sys_created_on>
+            <sys_id>e546dfdcc35ee2504570f90ed401316e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_moviesdb" sys_domain="global" view="Default view">7e8f3facc30e62104570f90ed40131dd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-16 17:34:57</sys_updated_on>
+            <sys_updated_on>2025-06-19 03:25:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>u_rated</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-16 17:34:57</sys_created_on>
-            <sys_id>11dbf6a7c34222504570f90ed40131eb</sys_id>
+            <sys_created_on>2025-06-19 03:25:55</sys_created_on>
+            <sys_id>6d46dfdcc35ee2504570f90ed401316e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_moviesdb" sys_domain="global" view="Default view">7e8f3facc30e62104570f90ed40131dd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-16 17:34:57</sys_updated_on>
+            <sys_updated_on>2025-06-19 03:25:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,13 +116,13 @@
             <element>.end_split</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-16 17:34:57</sys_created_on>
-            <sys_id>95dbf6a7c34222504570f90ed40131eb</sys_id>
+            <sys_created_on>2025-06-19 03:25:55</sys_created_on>
+            <sys_id>e146dfdcc35ee2504570f90ed401316f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_moviesdb" sys_domain="global" view="Default view">7e8f3facc30e62104570f90ed40131dd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-16 17:34:57</sys_updated_on>
+            <sys_updated_on>2025-06-19 03:25:55</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -130,13 +130,13 @@
             <element>u_plot</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-16 17:34:57</sys_created_on>
-            <sys_id>1ddbf6a7c34222504570f90ed40131eb</sys_id>
+            <sys_created_on>2025-06-19 03:25:55</sys_created_on>
+            <sys_id>6946dfdcc35ee2504570f90ed401316f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_moviesdb" sys_domain="global" view="Default view">7e8f3facc30e62104570f90ed40131dd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-16 17:34:57</sys_updated_on>
+            <sys_updated_on>2025-06-19 03:25:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -144,13 +144,27 @@
             <element>u_info</element>
             <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-06-16 17:34:57</sys_created_on>
-            <sys_id>91dbf6a7c34222504570f90ed40131ec</sys_id>
+            <sys_created_on>2025-06-19 03:25:55</sys_created_on>
+            <sys_id>ed46dfdcc35ee2504570f90ed401316f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="u_moviesdb" sys_domain="global" view="Default view">7e8f3facc30e62104570f90ed40131dd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-06-16 17:34:57</sys_updated_on>
+            <sys_updated_on>2025-06-19 03:25:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_poster_attachment</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-19 03:30:57</sys_created_on>
+            <sys_id>17679bdcc35ee2504570f90ed4013168</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_moviesdb" sys_domain="global" view="Default view">7e8f3facc30e62104570f90ed40131dd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-19 03:30:57</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

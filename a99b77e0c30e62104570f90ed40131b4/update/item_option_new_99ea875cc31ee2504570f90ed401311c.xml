@@ -42,14 +42,14 @@
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>input_movie_title</name>
+        <name>released</name>
         <not_available_conversation>false</not_available_conversation>
-        <order>200</order>
+        <order>800</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Digite o titulo do filme</question_text>
+        <question_text>Data de Lançamento</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -77,16 +77,16 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-06-16 02:45:15</sys_created_on>
-        <sys_id>e310fb17c342ee104570f90ed40131af</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Digite o titulo do filme</sys_name>
+        <sys_created_on>2025-06-19 02:36:23</sys_created_on>
+        <sys_id>99ea875cc31ee2504570f90ed401311c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Data de Lançamento</sys_name>
         <sys_package display_value="Cinema" source="a99b77e0c30e62104570f90ed40131b4">a99b77e0c30e62104570f90ed40131b4</sys_package>
         <sys_policy/>
         <sys_scope display_value="Cinema">a99b77e0c30e62104570f90ed40131b4</sys_scope>
-        <sys_update_name>item_option_new_e310fb17c342ee104570f90ed40131af</sys_update_name>
+        <sys_update_name>item_option_new_99ea875cc31ee2504570f90ed401311c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-19 02:58:31</sys_updated_on>
+        <sys_updated_on>2025-06-19 02:58:32</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
@@ -106,22 +106,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=e310fb17c342ee104570f90ed40131af"/>
-    <fx_price action="delete_multiple" query="id=e310fb17c342ee104570f90ed40131af"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=99ea875cc31ee2504570f90ed401311c"/>
+    <fx_price action="delete_multiple" query="id=99ea875cc31ee2504570f90ed401311c"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="BRL">BRL</currency>
         <field>price_if_checked</field>
-        <id>e310fb17c342ee104570f90ed40131af</id>
+        <id>99ea875cc31ee2504570f90ed401311c</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-06-16 02:45:15</sys_created_on>
-        <sys_id>bc307f17c342ee104570f90ed401316a</sys_id>
+        <sys_created_on>2025-06-19 02:36:23</sys_created_on>
+        <sys_id>00fa475cc31ee2504570f90ed40131d7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-16 02:45:15</sys_updated_on>
+        <sys_updated_on>2025-06-19 02:36:23</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -129,16 +129,16 @@
         <amount>0</amount>
         <currency display_value="BRL">BRL</currency>
         <field>rec_price_if_checked</field>
-        <id>e310fb17c342ee104570f90ed40131af</id>
+        <id>99ea875cc31ee2504570f90ed401311c</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-06-16 02:45:15</sys_created_on>
-        <sys_id>34307f17c342ee104570f90ed401316a</sys_id>
+        <sys_created_on>2025-06-19 02:36:23</sys_created_on>
+        <sys_id>84fa475cc31ee2504570f90ed40131d6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-16 02:45:15</sys_updated_on>
+        <sys_updated_on>2025-06-19 02:36:23</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
